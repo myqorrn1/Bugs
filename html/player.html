@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/bugs_favicon.png"
+      type="image/x-icon"
+    />
+    <title>Bugs | 플레이어</title>
+
+    <link rel="stylesheet" href="../css/player.css" />
+    <script
+      src="https://kit.fontawesome.com/de9012b52d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div id="header-left">
+          <div>
+            <button id="h-btn"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div>
+            <button id="h-btn"><i class="fa-solid fa-minus"></i></button>
+          </div>
+        </div>
+        <div>
+          <img
+            id="bugs-logo"
+            src="/images/logo_transparent.svg"
+            width="70px"
+            onclick="location.href='../index.html'"
+            alt="벅스로고"
+          />
+        </div>
+        <div id="header-right">
+          <div>
+            <button id="h-btn"><i class="fa-solid fa-desktop"></i></button>
+          </div>
+          <div>
+            <button id="h-btn">
+              <i class="fa-solid fa-arrows-left-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="album-cover">
+        <img
+          src="/images/jasmine.png"
+          width="330px"
+          style="border-radius: 10px"
+          alt="앨범커버"
+        />
+      </div>
+      <div id="title">Jasmine</div>
+      <div id="artist">DPR LIVE</div>
+      <div class="content-1">
+        <div>
+          <button id="c-btn"><i class="fa-solid fa-ellipsis"></i></button>
+        </div>
+        <div>
+          <button id="heart"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div>
+          <button id="c-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+      <div class="play-bar">
+        <audio
+          controls
+          src="/music/dpr_live_-_jasmine_(mp3.pm).mp3"
+          style="width: 330px"
+        ></audio>
+      </div>
+      <div class="content-2">
+        <div>
+          <button id="c-2-btn"><i class="fa-solid fa-repeat"></i></button>
+        </div>
+        <div>
+          <button id="c-2-btn">
+            <i class="fa-solid fa-backward-step"></i>
+          </button>
+        </div>
+        <div>
+          <button id="c-2-btn"><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+        <div>
+          <button id="c-2-btn"><i class="fa-solid fa-shuffle"></i></button>
+        </div>
+      </div>
+      <div class="bottom">
+        <button id="bottom-btn">AAC 320kbps</button>
+      </div>
+    </div>
+  </body>
+</html>

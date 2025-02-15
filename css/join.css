@@ -1,0 +1,332 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "NanumBarunGothic";
+  color: gray;
+}
+
+body {
+  background-color: #eef1f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+div {
+  /* border: 1px solid black; */
+}
+
+.container {
+  width: 1140px;
+  height: auto;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+#bugs-logo {
+  width: 150px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sign-up {
+  width: 540px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid rgb(209, 208, 208);
+  border-radius: 15px;
+}
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.email > div:nth-child(1) {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 17px;
+}
+.email > div:nth-child(2) {
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
+  margin: 20px 0;
+}
+#email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 374.83px;
+}
+#email-window {
+  width: 180px;
+  height: 50px;
+  border-radius: 3px;
+  border: 2px solid gray;
+}
+#select {
+  width: 130px;
+  height: 50px;
+  color: black;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 2px solid gray;
+}
+.password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.password > div:nth-child(1) {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 17px;
+}
+.password > div:nth-child(2) {
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
+  margin: 20px 0;
+}
+
+#pw-window1 {
+  height: 50px;
+  width: 374.83px;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 2px solid gray;
+}
+#pw-window2 {
+  height: 50px;
+  width: 374.83px;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 2px solid gray;
+}
+
+.nickname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nickname > div:nth-child(1) {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 17px;
+}
+#nick-window {
+  height: 50px;
+  width: 374.83px;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 2px solid gray;
+}
+.nickname > div:nth-child(2) {
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
+  margin: 20px 0;
+}
+
+.birth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.birth > div:nth-child(1) {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 17px;
+}
+#birth-window {
+  height: 50px;
+  width: 374.83px;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 2px solid gray;
+}
+.birth > div:nth-child(2) {
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
+  margin: 20px 0;
+}
+.gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gender > div:nth-child(1) {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.gender > div:nth-child(2) {
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
+  margin: 20px 0;
+}
+#gender {
+  width: 374.83px;
+  font-size: 15px;
+}
+
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  border-bottom: 1px solid rgb(175, 173, 173);
+}
+.phone > div:nth-child(1) {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 17px;
+}
+#phone-window {
+  width: 290px;
+  height: 50px;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 2px solid gray;
+}
+.phone > div:nth-child(2) {
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+#phone-btn {
+  height: 50px;
+  width: 80px;
+  color: white;
+  background-color: #3a3635;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}
+#phone-btn:hover {
+  cursor: pointer;
+}
+
+#agree-1,
+#agree-2,
+#agree-3,
+#agree-4,
+#agree-5 {
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.agree {
+  padding-top: 20px;
+}
+
+#sign-up-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 500px;
+  height: 70px;
+  font-size: 21px;
+  color: white;
+  background-color: #ff564c;
+  border: none;
+  border-radius: 5px;
+}
+#sign-up-btn:hover {
+  background-color: rgb(181, 52, 5);
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.footer {
+  height: 100px;
+  text-align: center;
+  padding-top: 50px;
+  font-size: small;
+}

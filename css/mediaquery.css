@@ -1,0 +1,239 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .nav-2 {
+    display: none;
+  }
+  .middle-btn {
+    font-size: 4rem;
+  }
+  .login {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: white;
+  }
+  .middle {
+    display: -ms-grid;
+    display: grid;
+    /* -ms-grid-columns: (1fr) [4]; */
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+  }
+  .album {
+    width: 110px;
+    height: 110px;
+  }
+  .card-music > div:nth-child(2) {
+    width: 110px;
+  }
+  .card-music > div:nth-child(3) > p {
+    width: 110px;
+  }
+
+  .m-name {
+    font-size: 1.2rem;
+  }
+  .artist {
+    font-size: 0.7rem;
+  }
+  .pd-cover {
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .pd-artist {
+    font-size: 1.2rem;
+  }
+  .top {
+    padding: 0px;
+  }
+  #chart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 1500px;
+  }
+  #pd {
+    padding: 25px;
+  }
+  .middle-btn {
+    font-size: 3rem;
+    padding: 5px;
+  }
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width: 767px) {
+  header {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .nav-2 {
+    display: none;
+  }
+  #add-img {
+    display: none;
+  }
+  .search-area fieldset {
+    width: 45vw;
+    height: 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #query {
+    width: 70%;
+  }
+
+  aside {
+    margin: 0 10px 10px 10px;
+    -ms-flex-preferred-size: 1%;
+    flex-basis: 1%;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .V-btn {
+    display: none;
+  }
+  #vip-btn {
+    display: none;
+  }
+  #buy {
+    display: none;
+  }
+  .aside-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: gray;
+    font-size: 1rem;
+    padding-left: 0;
+    padding: 15px;
+  }
+
+  .top {
+    height: 60px;
+    padding: 0px;
+  }
+  .middle {
+    display: -ms-grid;
+    display: grid;
+    /* -ms-grid-columns: (1fr) [4]; */
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+  }
+  .card-music > div:nth-child(2) {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    width: 15vw;
+  }
+  .card-music > div:nth-child(3) > p {
+    font-size: 0.5rem;
+    width: 15vw;
+  }
+  .album {
+    width: 15vw;
+    height: 15vw;
+    min-width: 60px;
+    min-height: 60px;
+  }
+  .middle-btn {
+    font-size: 2rem;
+    padding: 5px;
+  }
+  #chart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 1500px;
+  }
+  #pd {
+    padding: 25px;
+  }
+  .pd-cover {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #sign {
+    width: 100px;
+    font-size: 1.1rem;
+  }
+  #sign-btn {
+    padding-left: 5px;
+    font-size: 1.5rem;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  #test {
+    position: sticky;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .top-menu {
+    font-size: 1rem;
+  }
+  .col-1 > div:first-child {
+    font-size: 2rem;
+    line-height: 20px;
+  }
+  .m-name {
+    font-size: 1rem;
+  }
+  .artist {
+    font-size: 0.5rem;
+  }
+  .chart-bottom {
+    width: 300px;
+  }
+  .btn-d {
+    margin: 0;
+  }
+}

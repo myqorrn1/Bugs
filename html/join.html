@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/bugs_favicon.png"
+      type="image/x-icon"
+    />
+    <title>Bugs | 회원가입</title>
+    <link rel="stylesheet" href="../css/join.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          id="bugs-logo"
+          src="../images/bugs_logo.png"
+          alt="벅스로고"
+          onclick="location.href='/index.html'"
+        />
+      </div>
+
+      <form onsubmit="return validate()">
+        <div class="sign-up">
+          <div class="email">
+            <div>이메일</div>
+            <div>
+              <div id="email">
+                <div>
+                  <input id="email-window" type="text" name="email-id" />
+                </div>
+                <div style="margin: auto">@</div>
+                <div>
+                  <select id="select">
+                    <option selected>도메인 선택</option>
+                    <option>naver.com</option>
+                    <option>daum.net</option>
+                    <option>gmail.com</option>
+                    <option>hotmail.com</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <small
+                  >이메일은 결제내역 받기, 비밀번호 찾기 등에 사용되므로
+                  정확하게 입력해 주세요.</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="password">
+            <div>비밀번호</div>
+            <div>
+              <div>
+                <input
+                  id="pw-window1"
+                  type="password"
+                  name="pw"
+                  placeholder="비밀번호 입력"
+                />
+              </div>
+              <div>
+                <small
+                  >8-20자 영문 대소문자,숫자,특수문자 중 2가지 이상 조합</small
+                >
+              </div>
+              <div id="div1"></div>
+              <br />
+              <div>
+                <input
+                  id="pw-window2"
+                  type="password"
+                  name="pw"
+                  placeholder="비밀번호 다시입력"
+                />
+              </div>
+              <div id="div2"></div>
+            </div>
+          </div>
+          <div class="nickname">
+            <div>별명</div>
+            <div>
+              <div><input id="nick-window" type="text" name="nick" /></div>
+              <div>
+                <small
+                  >벅스 회원들과 감상을 나눌 수 있는 공간인 '한마디'에
+                  표시됩니다.</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="birth">
+            <div>생년월일</div>
+            <div>
+              <input id="birth-window" type="date" name="b-day" />
+            </div>
+          </div>
+          <div class="gender">
+            <div>성별</div>
+            <div>
+              <div id="gender">
+                <input type="radio" id="male" name="gender" />
+                <label for="male">남</label>
+                &nbsp;
+                <input type="radio" id="female" name="gender" />
+                <label for="female">여</label>
+              </div>
+            </div>
+          </div>
+          <div class="phone">
+            <div>휴대폰</div>
+            <div>
+              <div>
+                <input type="tel" id="phone-window" placeholder="숫자만 입력" />
+              </div>
+              &nbsp;
+              <button type="submit" id="phone-btn">인증</button>
+            </div>
+          </div>
+          <div class="agree">
+            <input type="checkbox" id="agree-2" name="agreement" />
+            <label for="agree-2">(필수) 이용약관에 동의 합니다.</label>
+          </div>
+          <div class="agree">
+            <input type="checkbox" id="agree-3" name="agreement" />
+            <label for="agree-3"
+              >(필수) 개인정보 수집 및 이용에 대한 안내에 동의합니다.</label
+            >
+          </div>
+          <div class="agree">
+            <input type="checkbox" id="agree-4" name="agreement" />
+            <label for="agree-4"
+              >(선택) 벅스 소식, 이벤트 등 마케팅 홍보 수신에 동의합니다.</label
+            >
+          </div>
+          <div class="agree">
+            주요 공지사항 및 결제관련 정보일 경우, 정보 수신 동의 여부에
+            관계없이 발송됩니다.
+          </div>
+          <br />
+          <div class="sign-up-btn">
+            <button type="submit" id="sign-up-btn" name="sign-up-complete">
+              가입 완료
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="footer">© NHN Bugs Corp. All rights reserved.</div>
+    </div>
+
+    <script src="../js/join.js"></script>
+  </body>
+</html>

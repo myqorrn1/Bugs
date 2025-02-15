@@ -1,0 +1,184 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div {
+  /* border: 1px solid black; */
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgb(27, 27, 31);
+}
+.container {
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  width: 400px;
+  height: 670px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(43, 42, 42)),
+    color-stop(rgb(48, 48, 117)),
+    color-stop(rgb(176, 103, 83)),
+    to(rgb(18, 18, 18))
+  );
+  background: -o-linear-gradient(
+    rgb(43, 42, 42),
+    rgb(48, 48, 117),
+    rgb(176, 103, 83),
+    rgb(18, 18, 18)
+  );
+  background: linear-gradient(
+    rgb(43, 42, 42),
+    rgb(48, 48, 117),
+    rgb(176, 103, 83),
+    rgb(18, 18, 18)
+  );
+  /* 배경색 그라데이션 ! */
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+}
+#header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#bugs-logo {
+  cursor: pointer;
+  padding-top: 5px;
+}
+#header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#h-btn {
+  background-color: transparent;
+  border: none;
+  color: gray;
+  font-size: 15px;
+  cursor: pointer;
+}
+#h-btn:hover {
+  color: white;
+}
+
+.album-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#title {
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  font-size: 20px;
+}
+#artist {
+  text-align: center;
+  padding-top: 5px;
+  color: white;
+  font-size: 15px;
+}
+.content-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 15px;
+}
+#c-btn {
+  color: gray;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#c-btn:hover {
+  color: white;
+}
+#heart {
+  color: gray;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#heart:hover {
+  color: white;
+}
+#heart:focus {
+  color: orangered;
+}
+.play-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.content-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+#c-2-btn {
+  color: gray;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#c-2-btn:hover {
+  color: white;
+}
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 25px;
+}
+#bottom-btn {
+  color: gray;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 3px;
+  font-size: 10px;
+  cursor: pointer;
+}

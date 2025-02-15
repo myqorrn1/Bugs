@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/bugs_favicon.png"
+      type="image/x-icon"
+    />
+    <title>Bugs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/mediaquery.css" />
+    <script
+      src="https://kit.fontawesome.com/de9012b52d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>g
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="/images/bugs_logo.png"
+          id="bugs-logo"
+          onclick="location.href='/index.html'"
+          alt="벅스로고"
+        />
+      </div>
+      <div class="search-area">
+        <form>
+          <fieldset>
+            <input
+              type="search"
+              id="query"
+              autocomplete="off"
+              placeholder="슈퍼 사운드 벅스 ! "
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='슈퍼 사운드 벅스 ! '"
+            />
+            <button type="submit" id="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </fieldset>
+        </form>
+      </div>
+      <div id="add-img"><img src="/images/banner.png" alt="광고배너" /></div>
+      <div class="nav-2">
+        <div class="navItem" style="color: orangered">
+          <i class="fa-regular fa-circle-play"></i> 웹 플레이어
+        </div>
+        <div class="navItem">고객센터</div>
+        <div class="navItem" id="comico">comico</div>
+        <div class="navItem" id="ticket">티켓링크</div>
+        <div class="navItem" id="hangame">HANGAME</div>
+      </div>
+      <div class="login">
+        <button id="sign" onclick="location.href='./html/join.html'">
+          로그인 / 회원가입
+        </button>
+        <button type="submit" id="sign-btn">
+          <i class="fa-solid fa-bell"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <aside>
+        <div id="test">
+          <div class="V-btn">
+            <button id="vip-btn">
+              <i class="fa-solid fa-star" style="color: red"></i> 벅스 VIP
+              멤버십 안내
+            </button>
+          </div>
+          <div id="buy">
+            <div class="buy">이용권 구매</div>
+            <span> | </span>
+            <div class="buy">상품권 등록</div>
+          </div>
+          <div class="aside-menu">
+            <i class="fa-solid fa-chart-simple"></i><a href="">벅스차트</a>
+          </div>
+          <div class="aside-menu">
+            <i class="fa-solid fa-compact-disc"></i> <a href="">최신 음악</a>
+          </div>
+          <div class="aside-menu">
+            <i class="fa-solid fa-music"></i><a href="">뮤직4U</a>
+          </div>
+          <div class="aside-menu">
+            <i class="fa-solid fa-guitar"></i> <a href="">장르</a>
+          </div>
+          <div class="aside-menu">
+            <i class="fa-solid fa-newspaper"></i><a href="">뮤직포스트</a>
+          </div>
+        </div>
+      </aside>
+      <section>
+        <!-- BS -->
+        <div class="top">
+          <div class="col-1">
+            <div style="color: rgb(68, 67, 67)">최신 및 인기음악</div>
+            <div class="top-menu">전체</div>
+            <div class="top-menu">국내</div>
+            <div class="top-menu">해외</div>
+            <div class="top-menu">커넥트</div>
+          </div>
+        </div>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+              style="background-color: orangered"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              style="background-color: orangered"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              style="background-color: orangered"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <article id="new-songs">
+                <div class="middle">
+                  <div class="card-music">
+                    <div class="album album-cover-1">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>(What's the Story) Morning Glory?</div>
+                    <div style="color: gray">
+                      <p>Oasis(오아시스)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-2">
+                      <button
+                        class="middle-btn"
+                        onclick="window.open('./html/player.html','_blank','width=400,height=850');"
+                      >
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Jasmine</div>
+                    <div style="color: gray"><p>DPR LIVE</p></div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-3">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Justice</div>
+                    <div style="color: gray">
+                      <p>Justin Bieber(저스틴 비버)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-4">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>NewJeans 1st EP</div>
+                    <div style="color: gray"><p>NewJeans</p></div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-5">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>boy.</div>
+                    <div style="color: gray">
+                      <p>offonoff(오프온오프)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-6">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Christmas (Deluxe Edition)</div>
+                    <div style="color: gray">
+                      <p>Michael Bublé(마이클 부블레)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-7">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Lemon</div>
+                    <div style="color: gray">
+                      <p>Kenshi Yonez(켄시 요네즈)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-8">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Dawn FM</div>
+                    <div style="color: gray">
+                      <p>The Weeknd(위켄드)</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <article id="new-songs">
+                <div class="middle">
+                  <div class="card-music">
+                    <div class="album album-cover-1">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>(What's the Story) Morning Glory?</div>
+                    <div style="color: gray">
+                      <p>Oasis(오아시스)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-2">
+                      <button
+                        class="middle-btn"
+                        onclick="window.open('./html/player.html','_blank','width=400,height=850');"
+                      >
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Jasmine</div>
+                    <div style="color: gray"><p>DPR LIVE</p></div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-3">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Justice</div>
+                    <div style="color: gray">
+                      <p>Justin Bieber(저스틴 비버)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-4">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>NewJeans 1st EP</div>
+                    <div style="color: gray"><p>NewJeans</p></div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-5">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>boy.</div>
+                    <div style="color: gray">
+                      <p>offonoff(오프온오프)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-6">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Christmas (Deluxe Edition)</div>
+                    <div style="color: gray">
+                      <p>Michael Bublé(마이클 부블레)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-7">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Lemon</div>
+                    <div style="color: gray">
+                      <p>Kenshi Yonez(켄시 요네즈)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-8">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Dawn FM</div>
+                    <div style="color: gray">
+                      <p>The Weeknd(위켄드)</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <article id="new-songs">
+                <div class="middle">
+                  <div class="card-music">
+                    <div class="album album-cover-1">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>(What's the Story) Morning Glory?</div>
+                    <div style="color: gray">
+                      <p>Oasis(오아시스)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-2">
+                      <button
+                        class="middle-btn"
+                        onclick="window.open('./html/player.html','_blank','width=400,height=850');"
+                      >
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Jasmine</div>
+                    <div style="color: gray"><p>DPR LIVE</p></div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-3">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Justice</div>
+                    <div style="color: gray">
+                      <p>Justin Bieber(저스틴 비버)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-4">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>NewJeans 1st EP</div>
+                    <div style="color: gray"><p>NewJeans</p></div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-5">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>boy.</div>
+                    <div style="color: gray">
+                      <p>offonoff(오프온오프)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-6">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Christmas (Deluxe Edition)</div>
+                    <div style="color: gray">
+                      <p>Michael Bublé(마이클 부블레)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-7">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Lemon</div>
+                    <div style="color: gray">
+                      <p>Kenshi Yonez(켄시 요네즈)</p>
+                    </div>
+                  </div>
+                  <div class="card-music">
+                    <div class="album album-cover-8">
+                      <button class="middle-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                      </button>
+                    </div>
+                    <div>Dawn FM</div>
+                    <div style="color: gray">
+                      <p>The Weeknd(위켄드)</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+          </div>
+          <!-- <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button> -->
+          <!-- <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+        <!-- BS 끝 -->
+
+        <article id="chart">
+          <div id="music-chart">
+            <div class="chart-top">
+              <div id="m-chart">Top 10</div>
+              <div id="more">더 보기 ></div>
+            </div>
+            <div class="chart-middle">
+              <div class="rank">1</div>
+              <div class="chart-cover">
+                <img
+                  src="./images/die_with_a_smile.png"
+                  alt="die with a smile 앨범커버"
+                />
+              </div>
+              <div class="m-name">Die With A Smile</div>
+              <div class="artist">Lady GaGa, Bruno Mars</div>
+              <div class="btn">
+                <button class="btn-a">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="btn-b">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="btn-c">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-middle">
+              <div class="rank">2</div>
+              <div class="chart-cover">
+                <img
+                  src="./images/supernatural.png"
+                  alt="supernatural 앨범커버"
+                />
+              </div>
+              <div class="m-name">Supernatural</div>
+              <div class="artist">NewJeans</div>
+              <div class="btn">
+                <button class="btn-a">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="btn-b">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="btn-c">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-middle">
+              <div class="rank">3</div>
+              <div class="chart-cover">
+                <img
+                  src="./images/cruel_summer.png"
+                  alt="cruel summer 앨범커버"
+                />
+              </div>
+              <div class="m-name">Cruel Summer</div>
+              <div class="artist">Taylor Swift</div>
+              <div class="btn">
+                <button class="btn-a">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="btn-b">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="btn-c">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-middle">
+              <div class="rank">4</div>
+              <div class="chart-cover">
+                <img
+                  src="./images/dangerously.png"
+                  alt="dangerously 앨범커버"
+                />
+              </div>
+              <div class="m-name">Dangerously</div>
+              <div class="artist">Charlie Puth</div>
+              <div class="btn">
+                <button class="btn-a">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="btn-b">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="btn-c">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-middle">
+              <div class="rank">5</div>
+              <div class="chart-cover">
+                <img src="./images/luther.png" alt="luther 앨범커버" />
+              </div>
+              <div class="m-name">luther</div>
+              <div class="artist">Kendrick Lamar, SZA</div>
+              <div class="btn">
+                <button class="btn-a">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="btn-b">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="btn-c">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-middle">
+              <div class="rank">6</div>
+              <div class="chart-cover">
+                <img
+                  src="./images/steal_the_show.png"
+                  alt="steal the show 앨범커버"
+                />
+              </div>
+              <div class="m-name">Steal The Show</div>
+              <div class="artist">Lauv</div>
+              <div class="btn">
+                <button class="btn-a">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="btn-b">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="btn-c">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-middle">
+              <div class="rank">7</div>
+              <div class="chart-cover">
+                <img src="./images/snowman.png" alt="snowman 앨범커버" />
+              </div>
+              <div class="m-name">Snowman</div>
+              <div class="artist">Sia</div>
+              <div class="btn">
+                <button class="btn-a">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="btn-b">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="btn-c">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-middle">
+              <div class="rank">8</div>
+              <div class="chart-cover">
+                <img src="./images/older.png" alt="older 앨범커버" />
+              </div>
+              <div class="m-name">Older</div>
+              <div class="artist">Sasha Alex Sloan</div>
+              <div class="btn">
+                <button class="btn-a">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="btn-b">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="btn-c">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-middle">
+              <div class="rank">9</div>
+              <div class="chart-cover">
+                <img
+                  src="./images/i_don't_think_that_i_like_her.png"
+                  alt="I don't think that i like her 앨범커버"
+                />
+              </div>
+              <div class="m-name">I Don't Think That I Like Her</div>
+              <div class="artist">Charlie Puth</div>
+              <div class="btn">
+                <button class="btn-a">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="btn-b">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="btn-c">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-middle">
+              <div class="rank">10</div>
+              <div class="chart-cover">
+                <img
+                  src="./images/abracadabra.png"
+                  alt="abracadabra 앨범커버"
+                />
+              </div>
+              <div class="m-name">Abracadabra</div>
+              <div class="artist">Lady GaGa</div>
+              <div class="btn">
+                <button class="btn-a">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="btn-b">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="btn-c">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-bottom">
+              <button class="btn-d">
+                <i class="fa-solid fa-play" style="color: orangered"></i> 전체
+                듣기
+              </button>
+              <button class="btn-d">
+                <i class="fa-solid fa-plus"></i> 전체 재생목록에 추가
+              </button>
+              <button class="btn-d">
+                <i class="fa-solid fa-download"></i> 전체 다운로드
+              </button>
+            </div>
+          </div>
+          <div id="pd">
+            <div class="pd-top">
+              <div id="pd-name">인기 뮤직PD 앨범</div>
+
+              <div id="more-2">더 보기 ></div>
+            </div>
+            <div class="pd-content">
+              <div class="pd-cover pd-cover-1">
+                <button class="content-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+              </div>
+              <div>
+                <div class="title">여름의 노을과 함께 나른하게 누워</div>
+                <div class="pd-artist"><p>시농</p></div>
+              </div>
+              <div>
+                <button class="pd-btn">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="pd-content">
+              <div class="pd-cover pd-cover-2">
+                <button class="content-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+              </div>
+              <div>
+                <div class="title">누구든 좋아할 그루비함에 청량감 한 스푼</div>
+                <div class="pd-artist"><p>빅 부키</p></div>
+              </div>
+              <div>
+                <button class="pd-btn">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="pd-content">
+              <div class="pd-cover pd-cover-3">
+                <button class="content-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+              </div>
+              <div>
+                <div class="title">알바생 시절, 선곡 잘한다고 번호 따인 썰</div>
+                <div class="pd-artist"><p>감알남플리</p></div>
+              </div>
+              <div>
+                <button class="pd-btn">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+            <div class="pd-content">
+              <div class="pd-cover pd-cover-4">
+                <button class="content-btn">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+              </div>
+              <div>
+                <div class="title">썸머퀸들의 노래</div>
+                <div class="pd-artist"><p>채리니</p></div>
+              </div>
+              <div>
+                <button class="pd-btn">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <footer class="bg-transparent text-dark pt-5">
+          <div class="container px-5">
+            <div class="row">
+              <div class="col-6 col-lg-4">
+                <h3 class="fw-bold">Bugs</h3>
+                <p class="pt-2">
+                  벅스 | 대표: 박정흠 | 사업자등록번호: 888888-8888 (대한민국) |
+                  통신판매업 신고번호: 2025-88-8888 (사업자정보) | 고객지원문의
+                  +82 8888 8888 및 likegym2@naver.com | 호스팅서비스제공자:
+                  Google LLC
+                </p>
+                <p class="mb-2">0987654321</p>
+                <p>1234567890</p>
+              </div>
+              <div class="col">
+                <h4>회사</h4>
+                <ul class="list-unstyled pt-2">
+                  <li class="py-1">상세정보</li>
+                  <li class="py-1">채용정보</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h4>커뮤니티</h4>
+                <ul class="list-unstyled pt-2">
+                  <li class="py-1">아티스트</li>
+                  <li class="py-1">개발자</li>
+                  <li class="py-1">광고</li>
+                  <li class="py-1">투자자</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h4>요금제</h4>
+                <ul class="list-unstyled pt-2">
+                  <li class="py-1">Premium</li>
+                  <li class="py-1">일반</li>
+                </ul>
+              </div>
+              <div class="col-6 col-lg-3 text-lg-end">
+                <h4>Social Media Links</h4>
+                <div class="social-media pt-2">
+                  <a href="#" class="text-dark fs-2 me-3"
+                    ><i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#" class="text-dark fs-2 me-3"
+                    ><i class="bi bi-pinterest"></i
+                  ></a>
+                  <a href="#" class="text-dark fs-2 me-3"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="text-dark fs-2"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="d-sm-flex justify-content-between py-1">
+              <p>© 2025 Bugs . All Rights Reserved.</p>
+              <p>
+                <a href="#" class="text-dark text-decoration-none pe-4"
+                  >Terms of use</a
+                >
+                <a href="#" class="text-dark text-decoration-none">
+                  Privacy policy</a
+                >
+              </p>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
