@@ -435,28 +435,28 @@ section {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .album-cover-1 {
-  background-image: url(/images/oasis_cover.png);
+  background-image: url(../images/oasis_cover.png);
 }
 .album-cover-2 {
-  background-image: url(/images/dpr_cover.png);
+  background-image: url(../images/dpr_cover.png);
 }
 .album-cover-3 {
-  background-image: url(/images/bieber_cover.png);
+  background-image: url(../images/bieber_cover.png);
 }
 .album-cover-4 {
-  background-image: url(/images/newjeans_cover.jpeg);
+  background-image: url(../images/newjeans_cover.jpeg);
 }
 .album-cover-5 {
-  background-image: url(/images/offonoff_cover.jpeg);
+  background-image: url(../images/offonoff_cover.jpeg);
 }
 .album-cover-6 {
-  background-image: url(/images/buble_cover.jpeg);
+  background-image: url(../images/buble_cover.jpeg);
 }
 .album-cover-7 {
-  background-image: url(/images/lemon_cover.jpeg);
+  background-image: url(../images/lemon_cover.jpeg);
 }
 .album-cover-8 {
-  background-image: url(/images/weekend_cover.jpeg);
+  background-image: url(../images/weekend_cover.jpeg);
 }
 
 .middle-btn {
@@ -757,16 +757,16 @@ section {
   border-radius: 50%;
 }
 .pd-cover-1 {
-  background-image: url(/images/pd_01.jpeg);
+  background-image: url(../images/pd_01.jpeg);
 }
 .pd-cover-2 {
-  background-image: url(/images/pd_02.jpeg);
+  background-image: url(../images/pd_02.jpeg);
 }
 .pd-cover-3 {
-  background-image: url(/images/pd_03.jpeg);
+  background-image: url(../images/pd_03.jpeg);
 }
 .pd-cover-4 {
-  background-image: url(/images/pd_04.jpeg);
+  background-image: url(../images/pd_04.jpeg);
 }
 
 .pd-content > div:nth-child(1) {
