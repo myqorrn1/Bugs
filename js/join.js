@@ -14,7 +14,7 @@ inputId.addEventListener("keyup", function () {
 });
 
 const inputPw1 = document.getElementById("pw-window1");
-const regExp2 = /^(\d|\w|!@#\$%\^&\*\-_+){8,20}$/;
+const regExp2 = /^(?=.*[A-Za-z].*)(?=.*\d|\W)(?!.*\s).{8,20}$/;
 const div1 = document.getElementById("div1");
 
 inputPw1.addEventListener("keyup", function () {

@@ -29,7 +29,12 @@
             <div>
               <div id="email">
                 <div>
-                  <input id="email-window" type="text" name="email-id" />
+                  <input
+                    id="email-window"
+                    type="text"
+                    name="email-id"
+                    value="myqorrn1"
+                  />
                 </div>
                 <div style="margin: auto">@</div>
                 <div>
@@ -59,6 +64,7 @@
                   type="password"
                   name="pw"
                   placeholder="비밀번호 입력"
+                  value="qwer1234!"
                 />
               </div>
               <div>
@@ -74,6 +80,7 @@
                   type="password"
                   name="pw"
                   placeholder="비밀번호 다시입력"
+                  value="qwer1234!"
                 />
               </div>
               <div id="div2"></div>
@@ -82,7 +89,9 @@
           <div class="nickname">
             <div>별명</div>
             <div>
-              <div><input id="nick-window" type="text" name="nick" /></div>
+              <div>
+                <input id="nick-window" type="text" name="nick" value="정흠" />
+              </div>
               <div>
                 <small
                   >벅스 회원들과 감상을 나눌 수 있는 공간인 '한마디'에
@@ -94,14 +103,19 @@
           <div class="birth">
             <div>생년월일</div>
             <div>
-              <input id="birth-window" type="date" name="b-day" />
+              <input
+                id="birth-window"
+                type="date"
+                name="b-day"
+                value="1994-04-08"
+              />
             </div>
           </div>
           <div class="gender">
             <div>성별</div>
             <div>
               <div id="gender">
-                <input type="radio" id="male" name="gender" />
+                <input type="radio" id="male" name="gender" checked />
                 <label for="male">남</label>
                 &nbsp;
                 <input type="radio" id="female" name="gender" />
@@ -113,18 +127,23 @@
             <div>휴대폰</div>
             <div>
               <div>
-                <input type="tel" id="phone-window" placeholder="숫자만 입력" />
+                <input
+                  type="tel"
+                  id="phone-window"
+                  placeholder="숫자만 입력"
+                  value="01088888888"
+                />
               </div>
               &nbsp;
               <button type="button" id="phone-btn">인증</button>
             </div>
           </div>
           <div class="agree">
-            <input type="checkbox" id="agree-2" name="agreement" />
+            <input type="checkbox" id="agree-2" name="agreement" checked />
             <label for="agree-2">(필수) 이용약관에 동의 합니다.</label>
           </div>
           <div class="agree">
-            <input type="checkbox" id="agree-3" name="agreement" />
+            <input type="checkbox" id="agree-3" name="agreement" checked />
             <label for="agree-3"
               >(필수) 개인정보 수집 및 이용에 대한 안내에 동의합니다.</label
             >
