@@ -38,6 +38,7 @@ html {
 }
 
 body {
+  background-color: whitesmoke;
 }
 
 div {
@@ -60,7 +61,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -118,7 +118,6 @@ header {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  background-color: white;
   padding: 10px;
 }
 #bugs-logo {
@@ -133,7 +132,6 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: white;
 }
 .search-area fieldset {
   display: -webkit-box;
@@ -149,6 +147,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: white;
 }
 #query {
   width: 80%;
@@ -157,8 +156,8 @@ header {
   background-color: transparent;
 }
 #search-btn {
-  cursor: pointer;
   background-color: white;
+  cursor: pointer;
   border: none;
   font-size: 2rem;
   color: orangered;
@@ -171,7 +170,6 @@ header {
 }
 #add-img {
   cursor: pointer;
-  background-color: white;
   padding-left: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,7 +192,6 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: white;
   padding-right: 10px;
 }
 #sign {
@@ -203,9 +200,11 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px;
-  border: none;
+  border: 1.5px solid lightgray;
   border-radius: 25px;
   color: gray;
+  line-height: 100%;
+  background-color: white;
 }
 #sign:hover {
   cursor: pointer;
@@ -214,14 +213,15 @@ header {
   transform: scale(1.1);
   background-color: #d9d9d9;
   color: black;
+  border: none;
 }
 #sign-btn {
   color: gray;
-  background-color: white;
   border-radius: 50%;
   border: none;
   padding-left: 10px;
   font-size: 2rem;
+  background-color: transparent;
 }
 
 #sign-btn:hover {
@@ -237,9 +237,10 @@ main {
   height: 90vh;
 }
 aside {
+  height: 340px;
   -ms-flex-preferred-size: 15%;
   flex-basis: 15%;
-  border: 0.5px solid #d9d9d9;
+  border: 2px solid lightgray;
   margin: 0 0 0 10px;
   border-radius: 10px;
   background: -o-linear-gradient(white, #d9d9d9);
@@ -334,7 +335,7 @@ section {
   overflow-x: hidden;
   -ms-flex-preferred-size: 85%;
   flex-basis: 85%;
-  border: 0.5px solid #d9d9d9;
+  border: 2px solid lightgray;
   margin: 0 10px 0 10px;
   border-radius: 10px;
 }

@@ -25,7 +25,6 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: white;
   }
   .middle {
     display: -ms-grid;
@@ -203,7 +202,7 @@
   }
   #sign {
     width: 100px;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   #sign-btn {
     padding-left: 5px;
