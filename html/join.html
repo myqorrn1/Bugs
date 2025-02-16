@@ -116,7 +116,7 @@
                 <input type="tel" id="phone-window" placeholder="숫자만 입력" />
               </div>
               &nbsp;
-              <button type="submit" id="phone-btn">인증</button>
+              <button type="button" id="phone-btn">인증</button>
             </div>
           </div>
           <div class="agree">
@@ -141,7 +141,12 @@
           </div>
           <br />
           <div class="sign-up-btn">
-            <button type="submit" id="sign-up-btn" name="sign-up-complete">
+            <button
+              type="submit"
+              disabled
+              id="sign-up-btn"
+              name="sign-up-complete"
+            >
               가입 완료
             </button>
           </div>
@@ -151,5 +156,6 @@
     </div>
 
     <script src="../js/join.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   </body>
 </html>
